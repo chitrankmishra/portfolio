@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Chitrank Mishra</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+		<meta content="utf-8" http-equiv="encoding" />
+
+		<!-- Jquery -->
+		<script type="text/javascript" src="jquery/jquery.min.js"></script>
+
+		<!-- Bootstrap -->
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="bootstrap/css/bootstrap.min.css"
+		/>
+		<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+
+		<!-- FontAwesome -->
+		<link href="fontawesome/css/all.css" rel="stylesheet" />
+		<script defer src="fontawesome/js/all.js"></script>
+
+		<!-- Axios -->
+		<script type="text/javascript" src="axios/axios.min.js"></script>
+
+		<!-- Personalized Includes -->
+		<!-- CSS -->
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link class="theme" rel="stylesheet" type="text/css" href="css/light.css" />
+		<!-- Javascript -->
+		<script type="text/javascript" src="js/template.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+	</head>
+
+	<body class="body">
+		<div class="modal" id="main-modal">
+			<div class="modal-dialog modal-dialog-centered modal-lg">
+				<div class="modal-content">
+					<!-- Modal Header -->
+					<div class="modal-header" id="modal-header">
+						<h4 class="modal-title" id="modal-title">Modal Heading</h4>
+
+						<button type="button" class="close" data-dismiss="modal">
+							&times;
+						</button>
+					</div>
+
+					<!-- Modal body -->
+					<div class="modal-body" id="modal-body">Body</div>
+
+					<!-- Modal footer -->
+					<div class="modal-footer" id="modal-footer">
+						Footer
+						<!-- <button type="button" class="btn btn-danger" data-dismiss="modal">
+							Close
+						</button> -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- <button
+			type="button"
+			class="btn btn-primary"
+			data-toggle="modal"
+			data-target="#main-modal"
+			onclick=""
+		>
+			Open modal
+		</button> -->
+
+		<div class="" id="navigation">
+			<div class="row" id="tray">
+				<div class="tray-element">
+					<a
+						id="profile"
+						class="tray-icon tray-active"
+						href="#about-section"
+						onclick="toggleTrayActive(this.id)"
+					>
+						<i class="fas fa-user-circle"></i>
+					</a>
+				</div>
+				<div class="tray-element">
+					<a
+						id="experience"
+						class="tray-icon"
+						href="#experience-section"
+						onclick="toggleTrayActive(this.id)"
+					>
+						<i class="fas fa-chart-bar"></i>
+					</a>
+				</div>
+				<div class="tray-element">
+					<a
+						id="achievements"
+						class="tray-icon"
+						href="#achievements-section"
+						onclick="toggleTrayActive(this.id)"
+					>
+						<i class="fas fa-award"></i>
+					</a>
+				</div>
+				<div class="tray-element">
+					<a
+						id="projects"
+						class="tray-icon"
+						href="#projects-section"
+						onclick="toggleTrayActive(this.id)"
+					>
+						<i class="fas fa-code-branch"></i>
+					</a>
+				</div>
+				<div class="tray-element">
+					<a
+						id="contact"
+						class="tray-icon"
+						href="#contact-section"
+						onclick="toggleTrayActive(this.id)"
+					>
+						<i class="far fa-address-card"></i>
+					</a>
+				</div>
+				<div class="tray-element">
+					<a id="theme-button" class="tray-icon" onclick="toggleTheme()">
+						<i id="theme" class="fas fa-sun tray-icon"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="row center" id="heading">
+					<div class="col-sm-12"></div>
+				</div>
+
+				<div
+					class="example back1"
+					id="about-section"
+					onmouseover="toggleTrayActive('profile')"
+				>
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="row section">
+								<div class="col-sm-6 center">
+									<div class="" id="profile-div">
+										<img
+											class="rounded-circle mx-auto"
+											id="profile-picture"
+											src="images/2.jpg"
+										/>
+									</div>
+								</div>
+								<div class="col-sm-6" id="brand-div">
+									<div id="brand">
+										<span class="Comfortaa highlight1" id="brand-name">
+											Chitrank Mishra
+										</span>
+										<br />
+										<span class="Varela highlight3" id="sub-brand">
+											WEB DEVELOPER || COMPETITIVE PROGRAMMER || PYTHON ENGINEER
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div
+					class="example back2"
+					id="experience-section"
+					onmouseover="toggleTrayActive('experience')"
+				>
+					Experience
+				</div>
+
+				<div
+					class="example back1"
+					id="achievements-section"
+					onmouseover="toggleTrayActive('achievements')"
+				>
+					Achievements
+				</div>
+				<div
+					class="example back3"
+					id="projects-section"
+					onmouseover="toggleTrayActive('projects')"
+				>
+					Projects
+				</div>
+				<div
+					class="example back2"
+					id="contact-section"
+					onmouseover="toggleTrayActive('contact')"
+				>
+					Contact
+				</div>
+			</div>
+		</div>
+
+		<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+		<button onclick="toggleTheme()">change theme</button>
+	</body>
+
+	<script>
+		initialize();
+	</script>
+</html>

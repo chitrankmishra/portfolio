@@ -1,0 +1,26 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	background: #8f7a66;
+}
+
+.el {
+	width: 100vw;
+	height: 100vh;
+	padding: 1rem;
+	background-color: blue;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	mask-image: url(../images/light/profile.svg);
+	mask-size: 100vmin;
+	mask-repeat: no-repeat;
+	mask-position: center;
+}
+
+.icon {
+	font-size: 30px;
+}

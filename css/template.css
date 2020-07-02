@@ -1,0 +1,62 @@
+html {
+	scroll-behavior: smooth;
+}
+
+.red {
+	border: 2px red solid;
+}
+.blue {
+	border: 2px blue solid;
+}
+.green {
+	border: 2px green solid;
+}
+.black {
+	border: 2px black solid;
+}
+
+.center {
+	margin: 0 auto;
+	text-align: center;
+	justify-content: center;
+}
+
+@font-face {
+	font-family: BebasNeue;
+	src: url('fonts/BebasNeue-Regular.ttf');
+}
+.BebasNeue {
+	font-family: BebasNeue;
+}
+
+@font-face {
+	font-family: Comfortaa;
+	src: url('fonts/Comfortaa-Medium.ttf');
+}
+.Comfortaa {
+	font-family: Comfortaa;
+}
+
+@font-face {
+	font-family: Ubuntu;
+	src: url('fonts/UbuntuCondensed-Regular.ttf');
+}
+.Ubuntu {
+	font-family: Ubuntu;
+}
+
+@font-face {
+	font-family: Varela;
+	src: url('fonts/VarelaRound-Regular.ttf');
+}
+.Varela {
+	font-family: Varela;
+}
+
+@font-face {
+	font-family: Sourcesans;
+	src: url('fonts/SourceSansPro-Regular.ttf');
+}
+.Sourcesans {
+	font-family: Sourcesans;
+}

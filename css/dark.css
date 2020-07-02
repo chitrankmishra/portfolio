@@ -1,0 +1,72 @@
+@import 'template.css';
+:root {
+	--background: #202020;
+	--font1: #0071bc;
+	--font2: #205493;
+	--font3: #f5f7fa;
+	--back1: #212121;
+	--back2: #0071bc;
+	--back3: #212121;
+	--back4: #0071bc;
+	--highlight1: #323a45;
+	--highlight2: #698eb8;
+	--highlight3: #07307d;
+}
+body {
+	background-color: var(--background);
+}
+
+.error {
+	color: rgb(243, 59, 59);
+}
+.success {
+	color: rgb(56, 151, 56);
+}
+
+.highlight1 {
+	color: var(--highlight1);
+}
+.highlight2 {
+	color: var(--highlight2);
+}
+.highlight3 {
+	color: var(--highlight3);
+}
+
+.font1 {
+	color: var(--font1);
+}
+.font2 {
+	color: var(--font2);
+}
+.font3 {
+	color: var(--font3);
+}
+
+.back1 {
+	background-color: var(--back1);
+}
+.back2 {
+	background-color: var(--back2);
+}
+.back3 {
+	background-color: var(--back3);
+}
+.back4 {
+	background-color: var(--back4);
+}
+
+.btn-success {
+}
+.btn-primary {
+}
+
+.tray-icon {
+	color: var(--font2);
+}
+.tray-icon:hover {
+	color: var(--font3);
+}
+.tray-active {
+	color: var(--font3);
+}
