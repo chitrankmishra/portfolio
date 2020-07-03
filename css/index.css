@@ -77,10 +77,7 @@ body {
 		width: 15%;
 		margin: 0 auto;
 		padding-top: 10px;
-		position: relative;
 		vertical-align: middle;
-		text-align: center;
-		justify-content: center;
 		display: unset;
 		display: inline-block;
 		-ms-flex-wrap: unset;
@@ -103,16 +100,16 @@ body {
 #modal-footer {
 } */
 
+#container-col {
+	padding: 0px 0px 0px 0px;
+}
+
 #header {
 	height: 20vh;
 }
 .section {
-	height: 100%;
-	padding: 0px 100px 10px 100px;
-	margin: 10px 200px 10px 200px;
-}
-.example {
-	height: 80vh;
+	padding: 0px 100px 0px 100px;
+	margin: 0px 200px 40px 200px;
 }
 
 @media screen and (max-width: 700px) {
@@ -120,32 +117,39 @@ body {
 		height: 10vh;
 	}
 	.section {
-		height: 100%;
-		padding: 0px 10px 10px 10px;
-		margin: 0px 0px 0px 0px;
-	}
-	.example {
-		position: relative;
-		height: 100%;
+		padding: 0px 10px 0px 10px;
+		margin: 0px 0px 20px 0px;
 	}
 }
 
-#brand-div {
-	height: inherit;
+#profile-section {
 	display: table;
 }
-#brand {
+
+#introduction-div {
 	display: table-cell;
 	vertical-align: middle;
 }
-#brand-name {
+.introduction-sub-div {
+}
+.brand-name {
 	font-size: 50px;
 	font-weight: bolder;
 }
-#sub-brand {
+.sub-brand {
 	font-size: 18px;
-	font-weight: bold;
 	text-align: justify;
+	text-justify: inter-word;
+}
+#profile-picture-div {
+	display: table-cell;
+}
+
+.profile-picture-sub-div {
+	display: inline-block;
+	border-radius: 50%;
+	border: 10px solid var(--back2);
+	box-shadow: 0px 0px 20px 14px var(--back2);
 }
 #profile-picture {
 	width: 500px;
@@ -153,29 +157,55 @@ body {
 	height: auto;
 	border-radius: 50%;
 }
-#profile-div {
-	display: inline-block;
-	border-radius: 50%;
-	border: 10px solid var(--back2);
-	box-shadow: 0px 0px 20px 14px var(--back2);
-}
 .picture {
-	transition: filter 0.5s;
+	transition: filter 0.5s, transform 0.5s;
 	filter: grayscale(100%);
 }
 .picture:hover {
 	filter: unset;
+	transform: scale(1.1, 1.1);
+}
+
+@media screen and (max-width: 700px) {
+	#profile-section {
+		display: block;
+	}
+
+	#introduction-div {
+		display: block;
+		/* vertical-align: unset; */
+		margin-top: 50px;
+	}
+	.introduction-sub-div {
+		text-align: center;
+		vertical-align: unset;
+	}
+	.brand-name {
+		font-size: 25px;
+		font-weight: bolder;
+	}
+	.sub-brand {
+		font-size: 14px;
+		font-weight: bold;
+	}
+	#profile-picture-div {
+		display: block;
+	}
+
+	#profile-picture {
+		width: 300px;
+		max-width: 100%;
+		height: auto;
+		border-radius: 50%;
+	}
 }
 
 #platform-logo-section {
-	height: auto;
-
-	/* padding: 0px 100px 0 100px; */
+	padding-top: 40px;
 }
 
 .platform-logo-div {
 	border-radius: 5%;
-	position: relative;
 	text-align: center;
 	justify-content: center;
 	margin: 0 auto;
@@ -191,40 +221,17 @@ body {
 	max-width: 100%;
 	height: auto;
 	border-radius: 5%;
-	transition: filter 0.5s;
+	transition: filter 0.5s, transform 0.5s;
 	filter: grayscale(100%);
 }
-.platform-logo:hover {
+.platform-logo:hover,
+:focus {
 	filter: unset;
 	box-shadow: 0px 0px 10px 2px var(--back2);
+	transform: scale(1.1, 1.1);
 }
 
 @media screen and (max-width: 700px) {
-	#brand-div {
-		height: inherit;
-		display: block;
-		margin-top: 50px;
-	}
-	#brand {
-		text-align: center;
-		display: table-cell;
-		vertical-align: unset;
-	}
-	#brand-name {
-		font-size: 25px;
-		font-weight: bolder;
-	}
-	#sub-brand {
-		font-size: 14px;
-		font-weight: bold;
-	}
-	#profile-picture {
-		width: 300px;
-		max-width: 100%;
-		height: auto;
-		border-radius: 50%;
-	}
-
 	.platform-logo {
 		width: 30px;
 	}
@@ -238,4 +245,173 @@ body {
 .heading {
 	margin-top: 100px;
 	font-size: 40px;
+}
+
+.content-box {
+	border-bottom-right-radius: 10px;
+	border-top-left-radius: 10px;
+	margin: 30px 0px 30px 0px;
+	box-shadow: 10px 10px 15px 2px var(--shadow-black);
+	padding: 20px;
+}
+.content-box:hover,
+:focus {
+	box-shadow: 10px 10px 10px 2px var(--shadow-black);
+}
+
+.company-link {
+	display: inline-block;
+	font-weight: bolder;
+	width: 100%;
+}
+.company-logo-div {
+	display: inline-block;
+}
+.company-logo {
+	border-radius: 10px;
+	width: 40px;
+	height: auto;
+}
+.company-profile {
+	margin-left: 40px;
+	margin-top: 10px;
+	font-weight: bolder;
+}
+.company-profile-description {
+	margin-left: 60px;
+}
+
+@media screen and (max-width: 700px) {
+	.heading {
+		margin-top: 60px;
+		font-size: 25px;
+	}
+	.content-box {
+		margin: 20px 0px 20px 0px;
+		padding: 15px 5px 15px 5px;
+		font-size: 14px;
+	}
+	.company-logo-div {
+		padding: 0px 0px 0px 0px;
+	}
+	.company-logo {
+		border-radius: 2px;
+		width: 30px;
+	}
+	.company-profile {
+		margin-left: 10px;
+	}
+	.company-profile-description {
+		margin-left: 20px;
+	}
+}
+
+.project-sub-div {
+	padding-top: 40px;
+}
+.project-logo-div {
+	border-radius: 5%;
+	padding: 20px 40px 20px 40px;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+.project-logo {
+	/* background-color: var(--background); */
+	width: 160px;
+	max-width: 100%;
+	height: auto;
+	border-radius: 5%;
+	transition: filter 0.5s, transform 0.5s;
+	filter: grayscale(100%);
+}
+
+.project-logo:hover,
+:focus {
+	filter: unset;
+	box-shadow: 0px 0px 10px 2px var(--back2);
+	transform: scale(1.1, 1.1);
+}
+
+@media screen and (max-width: 700px) {
+	.project-logo {
+		width: 60px;
+	}
+
+	.project-logo-div {
+		padding: 10px 20px 10px 20px;
+		line-height: 50px;
+	}
+}
+
+.tech-div {
+	padding-top: 40px;
+}
+
+.tech-sub-div {
+	line-height: 40px;
+	padding: 3px;
+	transition: filter 0.5s;
+	filter: grayscale(100%);
+	border-radius: 5px;
+}
+.tech-sub-div:hover,
+:focus {
+	filter: unset;
+	box-shadow: 0px 0px 10px 2px var(--back2);
+}
+.tech-logo-div {
+	border-radius: 5%;
+}
+.tech-logo {
+	width: 30px;
+	max-width: 100%;
+	height: auto;
+	border-radius: 5%;
+}
+
+.language-name {
+	text-align: left;
+	font-size: 22px;
+}
+
+@media screen and (max-width: 700px) {
+	.tech-logo {
+		width: 25px;
+	}
+
+	.tech-logo-div {
+		padding: 0px 20px 0px 20px;
+		line-height: 50px;
+	}
+	.language-name {
+		display: none;
+	}
+}
+
+#contact-section {
+	margin-bottom: 40px;
+}
+
+.contact-info {
+	margin: 80px 0px 0px 0px;
+	font-size: 18px;
+	line-height: 40px;
+}
+.avatar {
+	width: 100%;
+	height: auto;
+	filter: drop-shadow(5px 5px 5px var(--shadow-black));
+	transition: transform 0.5s;
+}
+.avatar:hover {
+	transform: scale(1.1, 1.1);
+}
+
+@media screen and (max-width: 700px) {
+	.contact-info {
+		margin-top: 40px;
+		font-size: 16px;
+	}
 }

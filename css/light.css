@@ -12,6 +12,8 @@
 	--highlight1: #323a45;
 	--highlight2: #00ddd2;
 	--highlight3: #1978a5;
+	--shadow-white: #f5f7fa;
+	--shadow-black: #212121;
 }
 
 body {
@@ -27,12 +29,15 @@ body {
 
 .highlight1 {
 	color: var(--highlight1);
+	font-weight: bolder;
 }
 .highlight2 {
 	color: var(--highlight2);
+	font-weight: bolder;
 }
 .highlight3 {
 	color: var(--highlight3);
+	font-weight: bolder;
 }
 
 .font1 {

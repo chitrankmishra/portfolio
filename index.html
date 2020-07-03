@@ -103,9 +103,9 @@
 				</div>
 				<div class="tray-element">
 					<a
-						id="achievements"
+						id="education"
 						class="tray-icon"
-						href="#achievements-section"
+						href="#education-section"
 						onclick="toggleTrayActive(this.id)"
 					>
 						<i class="fas fa-award"></i>
@@ -130,151 +130,506 @@
 			</div>
 		</div>
 
-		<div class="row">
-			<div class="col-sm-12">
+		<div class="row" id="container-row">
+			<div class="col-sm-12" id="container-col">
 				<div class="row center" id="header">
 					<div class="col-sm-12"></div>
 				</div>
 
-				<div
-					class="example back1"
-					id="profile-section"
-					onmouseover="toggleTrayActive('profile')"
-				>
-					<div class="row">
-						<div class="col-sm-12">
-							<div class="row section">
-								<div class="col-sm-6 center">
-									<div id="profile-div">
-										<img
-											class="rounded-circle mx-auto picture"
-											id="profile-picture"
-											src="images/2.jpg"
-										/>
-									</div>
+				<div class="row back1" onmouseover="toggleTrayActive('profile')">
+					<div class="col-sm-12">
+						<div class="row section" id="profile-section">
+							<div class="col-sm-6 center" id="profile-picture-div">
+								<div class="profile-picture-sub-div">
+									<img
+										class="rounded-circle mx-auto picture"
+										id="profile-picture"
+										src="images/2.jpg"
+									/>
 								</div>
-								<div class="col-sm-6" id="brand-div">
-									<div id="brand">
-										<span class="Montserrat font3" id="brand-name">
-											Chitrank Mishra
+							</div>
+							<div class="col-sm-6" id="introduction-div">
+								<div class="introduction-sub-div">
+									<span class="Montserrat font3 brand-name">
+										Chitrank Mishra
+									</span>
+									<br />
+									<span class="Varela highlight3 sub-brand">
+										Versatile computer science student experienced in working
+										with people at multiple levels. Organized 10+ events in
+										college. Aiming to utilize my problem-solving, designing and
+										management skills for the betterment of the community.
+									</span>
+									<br /><br />
+									<span class="Varela highlight2 sub-brand">
+										Treasurer at IEEE Student Branch, JIIT || HackBMU-Winner ||
+										GeeksForGeeks Intern || Sports Programmer || Web Developer
+										|| Robotics Enthusiast
+									</span>
+									<br /><br />
+									<span class="Varela highlight2 sub-brand">
+										<i class="fas fa-map-marker-alt"></i>
+										&nbsp&nbsp NOIDA, INDIA
+									</span>
+									<br />
+									<a href="documents/resume.pdf" target="_blank">
+										<span class="Varela highlight2 sub-brand">
+											<i class="fas fa-file-download"></i>
+											&nbsp&nbsp Resume
 										</span>
-										<br />
-										<span class="Varela highlight2" id="sub-brand">
-											WEB DEVELOPER || COMPETITIVE PROGRAMMER || PYTHON ENGINEER
-										</span>
-									</div>
-								</div>
-							</div>
-							<div class="row section" id="platform-logo-section">
-								<div class="center platform-logo-div">
-									<a
-										href="https://codeforces.com/profile/chitrank_0614"
-										target="_blank"
-									>
-										<img
-											class="mx-auto platform-logo"
-											src="images/codeforces.png"
-										/>
-									</a>
-								</div>
-								<div class="center platform-logo-div">
-									<a
-										href="https://www.codechef.com/users/chitrank_0614"
-										target="_blank"
-									>
-										<img
-											class="mx-auto platform-logo"
-											src="images/codechef.jpg"
-										/>
-									</a>
-								</div>
-								<div class="center platform-logo-div">
-									<a
-										href="https://auth.geeksforgeeks.org/user/chitrank_0614/profile"
-										target="_blank"
-									>
-										<img
-											class="mx-auto platform-logo"
-											src="images/geeksforgeeks.png"
-										/>
-									</a>
-								</div>
-								<div class="center platform-logo-div">
-									<a href="https://github.com/FallenSage0614" target="_blank">
-										<img
-											class="mx-auto platform-logo"
-											src="images/github.png"
-										/>
-									</a>
-								</div>
-								<div class="center platform-logo-div">
-									<a
-										href="https://www.facebook.com/chitrank.0614/"
-										target="_blank"
-									>
-										<img
-											class="mx-auto platform-logo"
-											src="images/facebook.png"
-										/>
-									</a>
-								</div>
-								<div class="center platform-logo-div">
-									<a
-										href="https://www.instagram.com/chitrank_0614/"
-										target="_blank"
-									>
-										<img
-											class="mx-auto platform-logo"
-											src="images/instagram.jpeg"
-										/>
-									</a>
-								</div>
-								<div class="center platform-logo-div">
-									<a
-										href="https://www.linkedin.com/in/chitrank0614/"
-										target="_blank"
-									>
-										<img
-											class="mx-auto platform-logo"
-											src="images/linkedin.png"
-										/>
-									</a>
-								</div>
-								<div class="center platform-logo-div">
-									<a
-										href="https://www.quora.com/profile/Chitrank-Mishra"
-										target="_blank"
-									>
-										<img class="mx-auto platform-logo" src="images/quora.png" />
-									</a>
-								</div>
-								<div class="center platform-logo-div">
-									<a href="" target="_blank">
-										<img
-											class="mx-auto platform-logo"
-											src="images/blogger.png"
-										/>
 									</a>
 								</div>
 							</div>
 						</div>
+
+						<div class="row section" id="platform-logo-section">
+							<div class="center platform-logo-div">
+								<a
+									href="https://codeforces.com/profile/chitrank_0614"
+									target="_blank"
+								>
+									<img
+										class="mx-auto platform-logo"
+										src="images/codeforces.png"
+									/>
+								</a>
+							</div>
+							<div class="center platform-logo-div">
+								<a
+									href="https://www.codechef.com/users/chitrank_0614"
+									target="_blank"
+								>
+									<img
+										class="mx-auto platform-logo"
+										src="images/codechef.jpg"
+									/>
+								</a>
+							</div>
+							<div class="center platform-logo-div">
+								<a
+									href="https://auth.geeksforgeeks.org/user/chitrank_0614/profile"
+									target="_blank"
+								>
+									<img
+										class="mx-auto platform-logo"
+										src="images/geeksforgeeks.png"
+									/>
+								</a>
+							</div>
+							<div class="center platform-logo-div">
+								<a href="https://github.com/FallenSage0614" target="_blank">
+									<img class="mx-auto platform-logo" src="images/github.png" />
+								</a>
+							</div>
+							<div class="center platform-logo-div">
+								<a
+									href="https://www.facebook.com/chitrank.0614/"
+									target="_blank"
+								>
+									<img
+										class="mx-auto platform-logo"
+										src="images/facebook.png"
+									/>
+								</a>
+							</div>
+							<div class="center platform-logo-div">
+								<a
+									href="https://www.instagram.com/chitrank_0614/"
+									target="_blank"
+								>
+									<img
+										class="mx-auto platform-logo"
+										src="images/instagram.jpeg"
+									/>
+								</a>
+							</div>
+							<div class="center platform-logo-div">
+								<a
+									href="https://www.linkedin.com/in/chitrank0614/"
+									target="_blank"
+								>
+									<img
+										class="mx-auto platform-logo"
+										src="images/linkedin.png"
+									/>
+								</a>
+							</div>
+							<div class="center platform-logo-div">
+								<a
+									href="https://www.quora.com/profile/Chitrank-Mishra"
+									target="_blank"
+								>
+									<img class="mx-auto platform-logo" src="images/quora.png" />
+								</a>
+							</div>
+							<div class="center platform-logo-div">
+								<a href="" target="_blank">
+									<img class="mx-auto platform-logo" src="images/blogger.png" />
+								</a>
+							</div>
+						</div>
 					</div>
 				</div>
-				<div
-					class="example back2"
-					id="experience-section"
-					onmouseover="toggleTrayActive('experience')"
-				>
-					<div class="row">
-						<div class="col-sm-12">
-							<div class="row section">
-								<div class="col-sm-12">
-									<div class="row heading">
-										<span class="font2 Montserrat">Experience</span>
+
+				<div class="row back2" onmouseover="toggleTrayActive('experience')">
+					<div class="col-sm-12">
+						<div class="row section" id="experience-section">
+							<div class="col-sm-12">
+								<div class="row heading">
+									<span class="font2 Montserrat">Experience</span>
+								</div>
+
+								<div class="row content-box back1 Varela">
+									<div class="col-sm-12">
+										<div class="row">
+											<a
+												class="company-link highlight3"
+												href="https://auth.geeksforgeeks.org/user/chitrank_0614/profile"
+												target="_blank"
+											>
+												<div class="col company-logo-div">
+													<img
+														class="company-logo"
+														src="images/geeksforgeeks.png"
+													/>
+													&nbsp&nbsp&nbsp GeeksForGeeks
+												</div>
+											</a>
+										</div>
+										<div class="row company-profile highlight2">
+											<div class="col-sm-10">
+												<i class="fas fa-angle-double-right"></i>
+												&nbsp&nbsp&nbsp Technical Content Writer
+											</div>
+											<div class="col-sm-2 italic">(2019-Present)</div>
+										</div>
+										<div class="row company-profile-description font3">
+											<div class="col-sm-12">
+												<i class="fas fa-angle-right"></i> &nbsp&nbsp&nbsp Wrote
+												Published 20+ articles on the platform during the
+												internship period.
+												<br />
+												<i class="fas fa-angle-right"></i> &nbsp&nbsp&nbsp
+												Topics inculded C++, Algorithms, Patterns, Web
+												Development, etc.
+											</div>
+										</div>
+										<div class="row">
+											<a
+												href="documents/GFG Certificate.pdf"
+												class="company-link highlight3"
+												target="_blank"
+											>
+												<div class="company-profile-description col-sm-12">
+													<i class="fas fa-file-download"></i>
+													&nbsp&nbsp See Certificate
+												</div>
+											</a>
+										</div>
 									</div>
-									<div class="row">
-										<div class="col-sm-6">as</div>
-										<div class="col-sm-6">as</div>
+								</div>
+
+								<div class="row content-box back1 Varela">
+									<div class="col-sm-12">
+										<div class="row">
+											<a
+												class="company-link highlight3"
+												href="www.jiit.ac.in"
+												target="_blank"
+											>
+												<div class="col company-logo-div">
+													<img
+														class="company-logo"
+														src="images/Jiit Blue.png"
+													/>
+													&nbsp&nbsp&nbsp Jaypee Institute Of Information
+													Technology
+												</div>
+											</a>
+										</div>
+										<div class="row company-profile highlight2">
+											<div class="col-sm-10">
+												<i class="fas fa-angle-double-right"></i>
+												&nbsp&nbsp&nbsp Industrial Trainee
+											</div>
+											<div class="col-sm-2 italic">(2019-2020)</div>
+										</div>
+										<div class="row company-profile-description font3">
+											<div class="col-sm-12">
+												<i class="fas fa-angle-right"></i> &nbsp&nbsp&nbsp Made
+												a machine translator evaluation system. Available in the
+												projects below.
+												<br />
+												<i class="fas fa-angle-right"></i> &nbsp&nbsp&nbsp Used
+												selenium on python to scrape translations and find the
+												efficiency of each module.
+												<br />
+												<i class="fas fa-angle-right"></i> &nbsp&nbsp&nbsp
+												Managed online servers for calculating efficiency.
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row content-box back1 Varela">
+									<div class="col-sm-12">
+										<div class="row">
+											<a
+												class="company-link highlight3"
+												href="https://www.linkedin.com/company/ieee-student-branch-jiit/?viewAsMember=true"
+												target="_blank"
+											>
+												<div class="col company-logo-div">
+													<img
+														class="company-logo"
+														src="images/ieee-blue-better.png"
+													/>
+													&nbsp&nbsp&nbsp IEEE Student Branch JIIT
+												</div>
+											</a>
+										</div>
+										<div class="row company-profile highlight2">
+											<div class="col-sm-10">
+												<i class="fas fa-angle-double-right"></i>
+												&nbsp&nbsp&nbsp Coordinator - Treasurer
+											</div>
+											<div class="col-sm-2 italic">(2019-Present)</div>
+										</div>
+										<div class="row company-profile-description font3">
+											<div class="col-sm-12">
+												<i class="fas fa-angle-right"></i> &nbsp&nbsp&nbsp
+												Prepared and managed the budget for the organization.
+												<br />
+												<i class="fas fa-angle-right"></i> &nbsp&nbsp&nbsp
+												Coordinated 10+ events around the year.
+												<br />
+												<i class="fas fa-angle-right"></i> &nbsp&nbsp&nbsp
+												Organized a mega technical event - Xenith'20.
+											</div>
+										</div>
+										<div class="row company-profile highlight2">
+											<div class="col-sm-10">
+												<i class="fas fa-angle-double-right"></i>
+												&nbsp&nbsp&nbsp Student Volunteer
+											</div>
+											<div class="col-sm-2 italic">(2018-2019)</div>
+										</div>
+										<div class="row company-profile-description font3">
+											<div class="col-sm-12">
+												<i class="fas fa-angle-right"></i> &nbsp&nbsp&nbsp
+												Managed all the technical activities around the year.
+												<br />
+												<i class="fas fa-angle-right"></i> &nbsp&nbsp&nbsp
+												Taught C and C++ in Techblocks 4.1.
+												<br />
+												<i class="fas fa-angle-right"></i> &nbsp&nbsp&nbsp
+												Volunteered for the Organizing Committee of Xenith'19.
+											</div>
+										</div>
+										<div class="row company-profile highlight2">
+											<div class="col-sm-10">
+												<i class="fas fa-angle-double-right"></i>
+												&nbsp&nbsp&nbsp Student Volunteer
+											</div>
+											<div class="col-sm-2 italic">(2017-2018)</div>
+										</div>
+										<div class="row company-profile-description font3">
+											<div class="col-sm-12">
+												<i class="fas fa-angle-right"></i> &nbsp&nbsp&nbsp
+												Raised participation in the events around the year.
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="row content-box back1 Varela">
+									<div class="col-sm-12">
+										<div class="row">
+											<a
+												class="company-link highlight3"
+												href="https://www.facebook.com/uCR.jiit/"
+												target="_blank"
+											>
+												<div class="col company-logo-div">
+													<img class="company-logo" src="images/ucr.png" />
+													&nbsp&nbsp&nbsp Microcontroller Based Systems and
+													Robotics Hub, JIIT
+												</div>
+											</a>
+										</div>
+										<div class="row company-profile highlight2">
+											<div class="col-sm-10">
+												<i class="fas fa-angle-double-right"></i>
+												&nbsp&nbsp&nbsp Mentor
+											</div>
+											<div class="col-sm-2 italic">(2019-Present)</div>
+										</div>
+										<div class="row company-profile-description font3">
+											<div class="col-sm-12">
+												<i class="fas fa-angle-right"></i> &nbsp&nbsp&nbsp
+												Organized 2 robotics events during the session.
+											</div>
+										</div>
+										<div class="row company-profile highlight2">
+											<div class="col-sm-10">
+												<i class="fas fa-angle-double-right"></i>
+												&nbsp&nbsp&nbsp Student Volunteer
+											</div>
+											<div class="col-sm-2 italic">(2018-2019)</div>
+										</div>
+										<div class="row company-profile-description font3">
+											<div class="col-sm-12">
+												<i class="fas fa-angle-right"></i> &nbsp&nbsp&nbsp
+												Volunteered for the Organizing Committee for the
+												robotics events twice.
+												<br />
+												<i class="fas fa-angle-right"></i> &nbsp&nbsp&nbsp
+												Taught the basics of robotics to the first year.
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="row content-box back1 Varela">
+									<div class="col-sm-12">
+										<div class="row">
+											<a
+												class="company-link highlight3"
+												href="www.internity.in"
+												target="_blank"
+											>
+												<div class="col company-logo-div">
+													<img
+														class="company-logo"
+														src="images/internity.png"
+													/>
+													&nbsp&nbsp&nbsp Internity Foundation
+												</div>
+											</a>
+										</div>
+										<div class="row company-profile highlight2">
+											<div class="col-sm-10">
+												<i class="fas fa-angle-double-right"></i>
+												&nbsp&nbsp&nbsp Web Developer
+											</div>
+											<div class="col-sm-2 italic">(2018-2019)</div>
+										</div>
+										<div class="row company-profile-description font3">
+											<div class="col-sm-12">
+												<i class="fas fa-angle-right"></i> &nbsp&nbsp&nbsp
+												Designed an admin portal for the organization.
+												<br />
+												<i class="fas fa-angle-right"></i> &nbsp&nbsp&nbsp Wrote
+												30+ blogs as a part of training.
+											</div>
+										</div>
+										<div class="row">
+											<a
+												href="documents/Chitrank_WebDev.pdf"
+												class="company-link highlight3"
+												target="_blank"
+											>
+												<div class="company-profile-description col-sm-12">
+													<i class="fas fa-file-download"></i>
+													&nbsp&nbsp See Certificate
+												</div>
+											</a>
+										</div>
+										<div class="row company-profile highlight2">
+											<div class="col-sm-10">
+												<i class="fas fa-angle-double-right"></i>
+												&nbsp&nbsp&nbsp DS&A Intern
+											</div>
+											<div class="col-sm-2 italic">(2017-2018)</div>
+										</div>
+										<div class="row company-profile-description font3">
+											<div class="col-sm-12">
+												<i class="fas fa-angle-right"></i> &nbsp&nbsp&nbsp
+												Designed a file system as a part of project for the
+												organization.
+											</div>
+										</div>
+										<div class="row">
+											<a
+												href="documents/Chitrank DSA Internity Certificate.pdf"
+												class="company-link highlight3"
+												target="_blank"
+											>
+												<div class="company-profile-description col-sm-12">
+													<i class="fas fa-file-download"></i>
+													&nbsp&nbsp See Certificate
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="row content-box back1 Varela">
+									<div class="col-sm-12">
+										<div class="row">
+											<a
+												class="company-link highlight3"
+												href="www.thomso.in"
+												target="_blank"
+											>
+												<div class="col company-logo-div">
+													<img class="company-logo" src="images/thomso.jpeg" />
+													&nbsp&nbsp&nbsp Thomso IIT Roorkee
+												</div>
+											</a>
+										</div>
+										<div class="row company-profile highlight2">
+											<div class="col-sm-10">
+												<i class="fas fa-angle-double-right"></i>
+												&nbsp&nbsp&nbsp Campus Ambassador
+											</div>
+											<div class="col-sm-2 italic">(2018-2019)</div>
+										</div>
+										<div class="row company-profile-description font3">
+											<div class="col-sm-12">
+												<i class="fas fa-angle-right"></i> &nbsp&nbsp&nbsp
+												Promoted the technical fest in my college.
+											</div>
+										</div>
+										<div class="row">
+											<a
+												href="documents/Thomso CA Certificate.pdf"
+												class="company-link highlight3"
+												target="_blank"
+											>
+												<div class="company-profile-description col-sm-12">
+													<i class="fas fa-file-download"></i>
+													&nbsp&nbsp See Certificate
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="row content-box back1 Varela">
+									<div class="col-sm-12">
+										<div class="row">
+											<a
+												class="company-link highlight3"
+												href=""
+												target="_blank"
+											>
+												<div class="col company-logo-div">
+													<img class="company-logo" src="images/ic3.png" />
+													&nbsp&nbsp&nbsp IC3 Conference : JIIT
+												</div>
+											</a>
+										</div>
+										<div class="row company-profile highlight2">
+											<div class="col-sm-10">
+												<i class="fas fa-angle-double-right"></i>
+												&nbsp&nbsp&nbsp Event Organizer
+											</div>
+											<div class="col-sm-2 italic">(2019-2020)</div>
+										</div>
+										<div class="row company-profile-description font3">
+											<div class="col-sm-12">
+												<i class="fas fa-angle-right"></i> &nbsp&nbsp&nbsp
+												Managed the scholar lectures and session halls.
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -282,46 +637,754 @@
 					</div>
 				</div>
 
-				<div
-					class="example back3"
-					id="projects-section"
-					onmouseover="toggleTrayActive('projects')"
-				>
-					<div class="row">
-						<div class="col-sm-12">
-							<div class="row section">
-								<div class="col-sm-6">as</div>
-								<div class="col-sm-6">as</div>
+				<div class="row back3" onmouseover="toggleTrayActive('projects')">
+					<div class="col-sm-12">
+						<div class="row section" id="projects-section">
+							<div class="col-sm-12">
+								<div class="row heading">
+									<span class="font1 Montserrat">Projects</span>
+								</div>
+								<div class="row project-sub-div">
+									<div class="center project-logo-div">
+										<a
+											href="https://github.com/FallenSage0614/MLE-Dialect-Analysis"
+											target="_blank"
+										>
+											<img class="mx-auto project-logo" src="images/mle.png" />
+										</a>
+									</div>
+									<div class="center project-logo-div">
+										<a
+											href="https://github.com/FallenSage0614/Smart-Irrigation-Project"
+											target="_blank"
+										>
+											<img
+												class="mx-auto project-logo"
+												src="images/smartirrigation.png"
+											/>
+										</a>
+									</div>
+									<div class="center project-logo-div">
+										<a
+											href="https://github.com/FallenSage0614/Smart-Lens"
+											target="_blank"
+										>
+											<img
+												class="mx-auto project-logo"
+												src="images/smartlens.png"
+											/>
+										</a>
+									</div>
+									<div class="center project-logo-div">
+										<a
+											href="https://github.com/FallenSage0614/resourcemanager"
+											target="_blank"
+										>
+											<img
+												class="mx-auto project-logo"
+												src="images/database.png"
+											/>
+										</a>
+									</div>
+									<div class="center project-logo-div">
+										<a
+											href="https://github.com/FallenSage0614/BubbleSort-Visualizer"
+											target="_blank"
+										>
+											<img
+												class="mx-auto project-logo"
+												src="images/bubblesort.jpg"
+											/>
+										</a>
+									</div>
+									<div class="center project-logo-div">
+										<a
+											href="https://github.com/FallenSage0614/David-Voice-Assistant"
+											target="_blank"
+										>
+											<img
+												class="mx-auto project-logo"
+												src="images/voice-assistant.png"
+											/>
+										</a>
+									</div>
+									<div class="center project-logo-div">
+										<a
+											href="https://github.com/FallenSage0614/Compiler-Design-Project-C-AutoIndentor-and-Summariser"
+											target="_blank"
+										>
+											<img
+												class="mx-auto project-logo"
+												src="images/c++summary.png"
+											/>
+										</a>
+									</div>
+									<div class="center project-logo-div">
+										<a
+											href="https://github.com/FallenSage0614/Text-In-Image-Encryption-Image-Transfer-over-Server-Client-"
+											target="_blank"
+										>
+											<img
+												class="mx-auto project-logo"
+												src="images/serverclient.png"
+											/>
+										</a>
+									</div>
+
+									<div class="center project-logo-div">
+										<a
+											href="https://github.com/FallenSage0614/DelhiMetroRouteApp"
+											target="_blank"
+										>
+											<img
+												class="mx-auto project-logo"
+												src="images/delhimetro.png"
+											/>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row section" id="tech-section">
+							<div class="col-sm-12">
+								<div class="row heading">
+									<span class="font2 Montserrat">Tech Stack</span>
+								</div>
+								<div class="tech-div">
+									<div class="row highlight2 center tech-sub-div">
+										<div class="center col-sm-1 tech-logo-div">
+											<img class="mx-auto tech-logo" src="images/c.webp" />
+										</div>
+										<div class="col-sm-6 Varela bold language-name">
+											C
+										</div>
+										<div class="col">
+											<i class="fas fa-star icon"></i>
+										</div>
+										<div class="col">
+											<i class="fas fa-star"></i>
+										</div>
+										<div class="col">
+											<i class="fas fa-star"></i>
+										</div>
+										<div class="col">
+											<i class="fas fa-star"></i>
+										</div>
+										<div class="col">
+											<i class="far fa-star"></i>
+										</div>
+									</div>
+									<div class="row highlight2 center tech-sub-div">
+										<div class="center col-sm-1 tech-logo-div">
+											<img class="mx-auto tech-logo" src="images/cpp.png" />
+										</div>
+										<div class="col-sm-6 Varela bold language-name">
+											C++
+										</div>
+										<div class="col">
+											<i class="fas fa-star"></i>
+										</div>
+										<div class="col">
+											<i class="fas fa-star"></i>
+										</div>
+										<div class="col">
+											<i class="fas fa-star"></i>
+										</div>
+										<div class="col">
+											<i class="fas fa-star"></i>
+										</div>
+										<div class="col">
+											<i class="fas fa-star-half-alt"></i>
+										</div>
+									</div>
+
+									<div class="row highlight2 center tech-sub-div">
+										<div class="center col-sm-1 tech-logo-div">
+											<img class="mx-auto tech-logo" src="images/python.png" />
+										</div>
+										<div class="col-sm-6 Varela bold language-name">
+											Python
+										</div>
+										<div class="col">
+											<i class="fas fa-star icon"></i>
+										</div>
+										<div class="col">
+											<i class="fas fa-star"></i>
+										</div>
+										<div class="col">
+											<i class="fas fa-star"></i>
+										</div>
+										<div class="col">
+											<i class="fas fa-star-half-alt"></i>
+										</div>
+										<div class="col">
+											<i class="far fa-star"></i>
+										</div>
+									</div>
+									<div class="row highlight2 center tech-sub-div">
+										<div class="center col-sm-1 tech-logo-div">
+											<img
+												class="mx-auto tech-logo"
+												src="images/javascript.png"
+											/>
+										</div>
+										<div class="col-sm-6 Varela bold language-name">
+											Javascript
+										</div>
+										<div class="col">
+											<i class="fas fa-star icon"></i>
+										</div>
+										<div class="col">
+											<i class="fas fa-star"></i>
+										</div>
+										<div class="col">
+											<i class="fas fa-star"></i>
+										</div>
+										<div class="col">
+											<i class="fas fa-star-half-alt"></i>
+										</div>
+										<div class="col">
+											<i class="far fa-star"></i>
+										</div>
+									</div>
+									<div class="row highlight2 center tech-sub-div">
+										<div class="center col-sm-1 tech-logo-div">
+											<img class="mx-auto tech-logo" src="images/html.png" />
+										</div>
+										<div class="col-sm-6 Varela bold language-name">
+											HTML
+										</div>
+										<div class="col">
+											<i class="fas fa-star icon"></i>
+										</div>
+										<div class="col">
+											<i class="fas fa-star"></i>
+										</div>
+										<div class="col">
+											<i class="fas fa-star"></i>
+										</div>
+										<div class="col">
+											<i class="fas fa-star"></i>
+										</div>
+										<div class="col">
+											<i class="far fa-star"></i>
+										</div>
+									</div>
+									<div class="row highlight2 center tech-sub-div">
+										<div class="center col-sm-1 tech-logo-div">
+											<img class="mx-auto tech-logo" src="images/css.webp" />
+										</div>
+										<div class="col-sm-6 Varela bold language-name">
+											CSS
+										</div>
+										<div class="col">
+											<i class="fas fa-star icon"></i>
+										</div>
+										<div class="col">
+											<i class="fas fa-star"></i>
+										</div>
+										<div class="col">
+											<i class="fas fa-star"></i>
+										</div>
+										<div class="col">
+											<i class="fas fa-star"></i>
+										</div>
+										<div class="col">
+											<i class="far fa-star"></i>
+										</div>
+									</div>
+									<div class="row highlight2 center tech-sub-div">
+										<div class="center col-sm-1 tech-logo-div">
+											<img
+												class="mx-auto tech-logo"
+												src="images/bootstrap.png"
+											/>
+										</div>
+										<div class="col-sm-6 Varela bold language-name">
+											Bootstrap 4
+										</div>
+										<div class="col">
+											<i class="fas fa-star icon"></i>
+										</div>
+										<div class="col">
+											<i class="fas fa-star"></i>
+										</div>
+										<div class="col">
+											<i class="fas fa-star"></i>
+										</div>
+										<div class="col">
+											<i class="fas fa-star"></i>
+										</div>
+										<div class="col">
+											<i class="fas fa-star-half-alt"></i>
+										</div>
+									</div>
+									<div class="row highlight2 center tech-sub-div">
+										<div class="center col-sm-1 tech-logo-div">
+											<img class="mx-auto tech-logo" src="images/mysql.png" />
+										</div>
+										<div class="col-sm-6 Varela bold language-name">
+											MySQL
+										</div>
+										<div class="col">
+											<i class="fas fa-star icon"></i>
+										</div>
+										<div class="col">
+											<i class="fas fa-star"></i>
+										</div>
+										<div class="col">
+											<i class="fas fa-star"></i>
+										</div>
+										<div class="col">
+											<i class="fas fa-star-half-alt"></i>
+										</div>
+										<div class="col">
+											<i class="far fa-star"></i>
+										</div>
+									</div>
+									<div class="row highlight2 center tech-sub-div">
+										<div class="center col-sm-1 tech-logo-div">
+											<img class="mx-auto tech-logo" src="images/mongodb.png" />
+										</div>
+										<div class="col-sm-6 Varela bold language-name">
+											MongoDB
+										</div>
+										<div class="col">
+											<i class="fas fa-star icon"></i>
+										</div>
+										<div class="col">
+											<i class="fas fa-star"></i>
+										</div>
+										<div class="col">
+											<i class="fas fa-star"></i>
+										</div>
+										<div class="col">
+											<i class="fas fa-star"></i>
+										</div>
+										<div class="col">
+											<i class="far fa-star"></i>
+										</div>
+									</div>
+									<div class="row highlight2 center tech-sub-div">
+										<div class="center col-sm-1 tech-logo-div">
+											<img class="mx-auto tech-logo" src="images/heroku.png" />
+										</div>
+										<div class="col-sm-6 Varela bold language-name">
+											Heroku
+										</div>
+										<div class="col">
+											<i class="fas fa-star icon"></i>
+										</div>
+										<div class="col">
+											<i class="fas fa-star"></i>
+										</div>
+										<div class="col">
+											<i class="fas fa-star"></i>
+										</div>
+										<div class="col">
+											<i class="fas fa-star-half-alt"></i>
+										</div>
+										<div class="col">
+											<i class="far fa-star"></i>
+										</div>
+									</div>
+									<div class="row highlight2 center tech-sub-div">
+										<div class="center col-sm-1 tech-logo-div">
+											<img class="mx-auto tech-logo" src="images/git.png" />
+										</div>
+										<div class="col-sm-6 Varela bold language-name">
+											Git
+										</div>
+										<div class="col">
+											<i class="fas fa-star icon"></i>
+										</div>
+										<div class="col">
+											<i class="fas fa-star"></i>
+										</div>
+										<div class="col">
+											<i class="fas fa-star"></i>
+										</div>
+										<div class="col">
+											<i class="fas fa-star-half-alt"></i>
+										</div>
+										<div class="col">
+											<i class="far fa-star"></i>
+										</div>
+									</div>
+									<div class="row highlight2 center tech-sub-div">
+										<div class="center col-sm-1 tech-logo-div">
+											<img class="mx-auto tech-logo" src="images/arduino.png" />
+										</div>
+										<div class="col-sm-6 Varela bold language-name">
+											Arduino
+										</div>
+										<div class="col">
+											<i class="fas fa-star icon"></i>
+										</div>
+										<div class="col">
+											<i class="fas fa-star"></i>
+										</div>
+										<div class="col">
+											<i class="fas fa-star"></i>
+										</div>
+										<div class="col">
+											<i class="fas fa-star"></i>
+										</div>
+										<div class="col">
+											<i class="far fa-star"></i>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 
-				<div
-					class="example back1"
-					id="achievements-section"
-					onmouseover="toggleTrayActive('achievements')"
-				>
-					<div class="row">
-						<div class="col-sm-12">
-							<div class="row section">
-								<div class="col-sm-6">as</div>
-								<div class="col-sm-6">as</div>
+				<div class="row back1" onmouseover="toggleTrayActive('education')">
+					<div class="col-sm-12">
+						<div class="row section" id="education-section">
+							<div class="col-sm-12">
+								<div class="row heading">
+									<span class="font3 Montserrat">Education</span>
+								</div>
+
+								<div class="row content-box back3 Varela">
+									<div class="col-sm-12">
+										<div class="row">
+											<a
+												class="company-link highlight3"
+												href="http://www.jiit.ac.in/"
+												target="_blank"
+											>
+												<div class="col company-logo-div">
+													<img
+														class="company-logo"
+														src="images/Jiit Blue.png"
+													/>
+													&nbsp&nbsp&nbsp Jaypee Institute Of Information
+													Technology
+												</div>
+											</a>
+										</div>
+										<div class="row company-profile highlight2">
+											<div class="col-sm-10">
+												<i class="fas fa-angle-double-right"></i>
+												&nbsp&nbsp&nbsp Bachelor Of Technology
+											</div>
+											<div class="col-sm-2 italic">(2017-2020)</div>
+										</div>
+										<div class="row company-profile-description font2">
+											<div class="col-sm-12">
+												<i class="fas fa-angle-right"></i> &nbsp&nbsp&nbsp
+												Computer Science Engineering <br />
+												<i class="fas fa-angle-right"></i> &nbsp&nbsp&nbspCGPA:
+												8.9
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row content-box back3 Varela">
+									<div class="col-sm-12">
+										<div class="row">
+											<a
+												class="company-link highlight3"
+												href="https://www.jaiacademy.in/"
+												target="_blank"
+											>
+												<div class="col company-logo-div">
+													<img
+														class="company-logo"
+														src="images/jaiacademy.png"
+													/>
+													&nbsp&nbsp&nbsp Jai Academy
+												</div>
+											</a>
+										</div>
+										<div class="row company-profile highlight2">
+											<div class="col-sm-10">
+												<i class="fas fa-angle-double-right"></i>
+												&nbsp&nbsp&nbsp CBSE Board: Class 12th
+											</div>
+											<div class="col-sm-2 italic">(2014-2016)</div>
+										</div>
+										<div class="row company-profile-description font2">
+											<div class="col-sm-12">
+												<i class="fas fa-angle-right"></i> &nbsp&nbsp&nbsp
+												Percentage: 95%
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row content-box back3 Varela">
+									<div class="col-sm-12">
+										<div class="row">
+											<a
+												class="company-link highlight3"
+												href="https://www.modernschooljhansi.org/"
+												target="_blank"
+											>
+												<div class="col company-logo-div">
+													<img
+														class="company-logo"
+														src="images/modernschool.png"
+													/>
+													&nbsp&nbsp&nbsp Modern Public School
+												</div>
+											</a>
+										</div>
+										<div class="row company-profile highlight2">
+											<div class="col-sm-10">
+												<i class="fas fa-angle-double-right"></i>
+												&nbsp&nbsp&nbsp ICSE Board: Class 10th
+											</div>
+											<div class="col-sm-2 italic">(2014)</div>
+										</div>
+										<div class="row company-profile-description font2">
+											<div class="col-sm-12">
+												<i class="fas fa-angle-right"></i> &nbsp&nbsp&nbsp
+												Percentage: 92.67%
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row section" id="achievements-section">
+							<div class="col-sm-12">
+								<div class="row heading">
+									<span class="font3 Montserrat">Achievements</span>
+								</div>
+								<div class="row content-box back2 Varela">
+									<div class="col-sm-12">
+										<div class="row">
+											<div class="col-sm-10 highlight1">
+												<i class="fas fa-award"></i>
+												&nbsp&nbsp Hack-BMU
+											</div>
+											<div class="col-sm-2 italic">(2019-2020)</div>
+										</div>
+										<div class="row">
+											<div class="col-sm-12 company-profile font2">
+												<i class="fas fa-angle-right"></i>
+												&nbsp&nbsp Hackathon Winner
+											</div>
+										</div>
+										<!-- <div class="row">
+											<a
+												href=""
+												class="company-link highlight3"
+												target="_blank"
+											>
+												<div class="company-profile col-sm-12">
+													<i class="fas fa-file-download"></i>
+													&nbsp&nbsp See Certificate
+												</div>
+											</a>
+										</div> -->
+									</div>
+								</div>
+								<div class="row content-box back2 Varela">
+									<div class="col-sm-12">
+										<div class="row">
+											<div class="col-sm-10 highlight1">
+												<i class="fas fa-award"></i>
+												&nbsp&nbsp Drink n Code : Impressions JIIT
+											</div>
+											<div class="col-sm-2 italic">(2017-2018)</div>
+										</div>
+										<div class="row">
+											<div class="col-sm-12 company-profile font2">
+												<i class="fas fa-angle-right"></i>
+												&nbsp&nbsp TBD
+											</div>
+										</div>
+										<!-- <div class="row">
+											<a
+												href=""
+												class="company-link highlight3"
+												target="_blank"
+											>
+												<div class="company-profile col-sm-12">
+													<i class="fas fa-file-download"></i>
+													&nbsp&nbsp See Certificate
+												</div>
+											</a>
+										</div> -->
+									</div>
+								</div>
+								<div class="row content-box back2 Varela">
+									<div class="col-sm-12">
+										<div class="row">
+											<div class="col-sm-10 highlight1">
+												<i class="fas fa-award"></i>
+												&nbsp&nbsp Causatum - Cybershristi JIIT
+											</div>
+											<div class="col-sm-2 italic">(2017-2018)</div>
+										</div>
+										<div class="row">
+											<div class="col-sm-12 company-profile font2">
+												<i class="fas fa-angle-right"></i>
+												&nbsp&nbsp Winner
+											</div>
+										</div>
+										<!-- <div class="row">
+											<a
+												href=""
+												class="company-link highlight3"
+												target="_blank"
+											>
+												<div class="company-profile col-sm-12">
+													<i class="fas fa-file-download"></i>
+													&nbsp&nbsp See Certificate
+												</div>
+											</a>
+										</div> -->
+									</div>
+								</div>
+								<div class="row content-box back2 Varela">
+									<div class="col-sm-12">
+										<div class="row">
+											<div class="col-sm-10 highlight1">
+												<i class="fas fa-award"></i>
+												&nbsp&nbsp Make-a-Materpiece : Cybershristi JIIT
+											</div>
+											<div class="col-sm-2 italic">(2017-2018)</div>
+										</div>
+										<div class="row">
+											<div class="col-sm-12 company-profile font2">
+												<i class="fas fa-angle-right"></i>
+												&nbsp&nbsp Winner
+											</div>
+										</div>
+										<!-- <div class="row">
+											<a
+												href=""
+												class="company-link highlight3"
+												target="_blank"
+											>
+												<div class="company-profile col-sm-12">
+													<i class="fas fa-file-download"></i>
+													&nbsp&nbsp See Certificate
+												</div>
+											</a>
+										</div> -->
+									</div>
+								</div>
+								<div class="row content-box back2 Varela">
+									<div class="col-sm-12">
+										<div class="row">
+											<div class="col-sm-10 highlight1">
+												<i class="fas fa-award"></i>
+												&nbsp&nbsp Contemporary Forms of Literature
+											</div>
+											<div class="col-sm-2 italic">(2017-2018)</div>
+										</div>
+										<div class="row">
+											<div class="col-sm-12 company-profile font2">
+												<i class="fas fa-angle-right"></i>
+												&nbsp&nbsp Published a paper
+											</div>
+										</div>
+										<!-- <div class="row">
+											<a
+												href=""
+												class="company-link highlight3"
+												target="_blank"
+											>
+												<div class="company-profile col-sm-12">
+													<i class="fas fa-file-download"></i>
+													&nbsp&nbsp See Certificate
+												</div>
+											</a>
+										</div> -->
+									</div>
+								</div>
+								<div class="row content-box back2 Varela">
+									<div class="col-sm-12">
+										<div class="row">
+											<div class="col-sm-10 highlight1">
+												<i class="fas fa-award"></i>
+												&nbsp&nbsp Creative Writing Competition
+											</div>
+											<div class="col-sm-2 italic">(2017-2018)</div>
+										</div>
+										<div class="row">
+											<div class="col-sm-12 company-profile font2">
+												<i class="fas fa-angle-right"></i>
+												&nbsp&nbsp Winner
+											</div>
+										</div>
+										<!-- <div class="row">
+											<a
+												href=""
+												class="company-link highlight3"
+												target="_blank"
+											>
+												<div class="company-profile col-sm-12">
+													<i class="fas fa-file-download"></i>
+													&nbsp&nbsp See Certificate
+												</div>
+											</a>
+										</div> -->
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 
-				<div
-					class="example back2"
-					id="contact-section"
-					onmouseover="toggleTrayActive('contact')"
-				>
-					<div class="row">
-						<div class="col-sm-12">
-							<div class="row section">
-								<div class="col-sm-6">as</div>
-								<div class="col-sm-6">as</div>
+				<div class="row back2" onmouseover="toggleTrayActive('contact')">
+					<div class="col-sm-12">
+						<div class="row section" id="contact-section">
+							<div class="col-sm-12">
+								<div class="row heading">
+									<span class="font2 Montserrat">Contact</span>
+								</div>
+								<div class="row">
+									<div class="col-sm-9 contact-info font2 Varela">
+										<div class="row">
+											<a href="tel:+919818693448" class="font2">
+												<div class="col-sm-12">
+													<i class="fas fa-mobile-alt"></i>
+													&nbsp&nbsp +91 9818-69-3448
+												</div>
+											</a>
+										</div>
+										<div class="row">
+											<a
+												href="mailto:chitrankmishra010@gmail.com"
+												class="font2"
+											>
+												<div class="col-sm-12">
+													<i class="fas fa-envelope"></i>
+													&nbsp&nbsp chitrankmishra010@gmail.com
+												</div>
+											</a>
+										</div>
+										<div class="row">
+											<a
+												href="mailto:chitrankmishra020@gmail.com"
+												class="font2"
+											>
+												<div class="col-sm-12">
+													<i class="fas fa-envelope"></i>
+													&nbsp&nbsp chitrankmishra020@gmail.com
+												</div>
+											</a>
+										</div>
+										<div class="row">
+											<div class="col-sm-12">
+												<i class="fas fa-map-marked-alt"></i>
+												&nbsp&nbsp Jaypee Institute Of Information Technology,
+												Noida
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-3">
+										<img class="avatar" src="images/avatar.png" />
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>

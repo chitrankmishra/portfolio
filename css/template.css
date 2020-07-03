@@ -21,6 +21,13 @@ html {
 	justify-content: center;
 }
 
+.italic {
+	font-style: italic;
+}
+.bold {
+	font-weight: bolder;
+}
+
 @font-face {
 	font-family: BebasNeue;
 	src: url('fonts/BebasNeue-Regular.ttf');
