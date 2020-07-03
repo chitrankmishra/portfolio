@@ -201,7 +201,7 @@ body {
 }
 
 #platform-logo-section {
-	padding-top: 40px;
+	padding: 40px 15px 0px 15px;
 }
 
 .platform-logo-div {
@@ -393,7 +393,8 @@ body {
 #contact-section {
 	margin-bottom: 40px;
 }
-
+.contact-link {
+}
 .contact-info {
 	margin: 80px 0px 0px 0px;
 	font-size: 18px;
@@ -414,4 +415,9 @@ body {
 		margin-top: 40px;
 		font-size: 16px;
 	}
+}
+
+.main-col {
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
 }
