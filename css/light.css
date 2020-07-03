@@ -2,16 +2,16 @@
 
 :root {
 	--background: #f5f7fa;
-	--font1: #0071bc;
-	--font2: #205493;
+	--font1: #0ac0b7;
+	--font2: #f5f7fa;
 	--font3: #212121;
 	--back1: #f5f7fa;
-	--back2: #0071bc;
+	--back2: #0ac0b7;
 	--back3: #212121;
-	--back4: #0071bc;
+	--back4: #1978a5;
 	--highlight1: #323a45;
-	--highlight2: #698eb8;
-	--highlight3: #07307d;
+	--highlight2: #00ddd2;
+	--highlight3: #1978a5;
 }
 
 body {
@@ -67,8 +67,8 @@ body {
 	color: var(--font1);
 }
 .tray-icon:hover {
-	color: var(--highlight2);
+	color: var(--highlight1);
 }
 .tray-active {
-	color: var(--highlight2);
+	color: var(--highlight1);
 }

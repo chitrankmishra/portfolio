@@ -75,7 +75,7 @@
 					<a
 						id="profile"
 						class="tray-icon tray-active"
-						href="#about-section"
+						href="#profile-section"
 						onclick="toggleTrayActive(this.id)"
 					>
 						<i class="fas fa-user-circle"></i>
@@ -93,16 +93,6 @@
 				</div>
 				<div class="tray-element">
 					<a
-						id="achievements"
-						class="tray-icon"
-						href="#achievements-section"
-						onclick="toggleTrayActive(this.id)"
-					>
-						<i class="fas fa-award"></i>
-					</a>
-				</div>
-				<div class="tray-element">
-					<a
 						id="projects"
 						class="tray-icon"
 						href="#projects-section"
@@ -111,6 +101,17 @@
 						<i class="fas fa-code-branch"></i>
 					</a>
 				</div>
+				<div class="tray-element">
+					<a
+						id="achievements"
+						class="tray-icon"
+						href="#achievements-section"
+						onclick="toggleTrayActive(this.id)"
+					>
+						<i class="fas fa-award"></i>
+					</a>
+				</div>
+
 				<div class="tray-element">
 					<a
 						id="contact"
@@ -131,22 +132,22 @@
 
 		<div class="row">
 			<div class="col-sm-12">
-				<div class="row center" id="heading">
+				<div class="row center" id="header">
 					<div class="col-sm-12"></div>
 				</div>
 
 				<div
 					class="example back1"
-					id="about-section"
+					id="profile-section"
 					onmouseover="toggleTrayActive('profile')"
 				>
 					<div class="row">
 						<div class="col-sm-12">
 							<div class="row section">
 								<div class="col-sm-6 center">
-									<div class="" id="profile-div">
+									<div id="profile-div">
 										<img
-											class="rounded-circle mx-auto"
+											class="rounded-circle mx-auto picture"
 											id="profile-picture"
 											src="images/2.jpg"
 										/>
@@ -154,14 +155,106 @@
 								</div>
 								<div class="col-sm-6" id="brand-div">
 									<div id="brand">
-										<span class="Comfortaa highlight1" id="brand-name">
+										<span class="Montserrat font3" id="brand-name">
 											Chitrank Mishra
 										</span>
 										<br />
-										<span class="Varela highlight3" id="sub-brand">
+										<span class="Varela highlight2" id="sub-brand">
 											WEB DEVELOPER || COMPETITIVE PROGRAMMER || PYTHON ENGINEER
 										</span>
 									</div>
+								</div>
+							</div>
+							<div class="row section" id="platform-logo-section">
+								<div class="center platform-logo-div">
+									<a
+										href="https://codeforces.com/profile/chitrank_0614"
+										target="_blank"
+									>
+										<img
+											class="mx-auto platform-logo"
+											src="images/codeforces.png"
+										/>
+									</a>
+								</div>
+								<div class="center platform-logo-div">
+									<a
+										href="https://www.codechef.com/users/chitrank_0614"
+										target="_blank"
+									>
+										<img
+											class="mx-auto platform-logo"
+											src="images/codechef.jpg"
+										/>
+									</a>
+								</div>
+								<div class="center platform-logo-div">
+									<a
+										href="https://auth.geeksforgeeks.org/user/chitrank_0614/profile"
+										target="_blank"
+									>
+										<img
+											class="mx-auto platform-logo"
+											src="images/geeksforgeeks.png"
+										/>
+									</a>
+								</div>
+								<div class="center platform-logo-div">
+									<a href="https://github.com/FallenSage0614" target="_blank">
+										<img
+											class="mx-auto platform-logo"
+											src="images/github.png"
+										/>
+									</a>
+								</div>
+								<div class="center platform-logo-div">
+									<a
+										href="https://www.facebook.com/chitrank.0614/"
+										target="_blank"
+									>
+										<img
+											class="mx-auto platform-logo"
+											src="images/facebook.png"
+										/>
+									</a>
+								</div>
+								<div class="center platform-logo-div">
+									<a
+										href="https://www.instagram.com/chitrank_0614/"
+										target="_blank"
+									>
+										<img
+											class="mx-auto platform-logo"
+											src="images/instagram.jpeg"
+										/>
+									</a>
+								</div>
+								<div class="center platform-logo-div">
+									<a
+										href="https://www.linkedin.com/in/chitrank0614/"
+										target="_blank"
+									>
+										<img
+											class="mx-auto platform-logo"
+											src="images/linkedin.png"
+										/>
+									</a>
+								</div>
+								<div class="center platform-logo-div">
+									<a
+										href="https://www.quora.com/profile/Chitrank-Mishra"
+										target="_blank"
+									>
+										<img class="mx-auto platform-logo" src="images/quora.png" />
+									</a>
+								</div>
+								<div class="center platform-logo-div">
+									<a href="" target="_blank">
+										<img
+											class="mx-auto platform-logo"
+											src="images/blogger.png"
+										/>
+									</a>
 								</div>
 							</div>
 						</div>
@@ -172,7 +265,36 @@
 					id="experience-section"
 					onmouseover="toggleTrayActive('experience')"
 				>
-					Experience
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="row section">
+								<div class="col-sm-12">
+									<div class="row heading">
+										<span class="font2 Montserrat">Experience</span>
+									</div>
+									<div class="row">
+										<div class="col-sm-6">as</div>
+										<div class="col-sm-6">as</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div
+					class="example back3"
+					id="projects-section"
+					onmouseover="toggleTrayActive('projects')"
+				>
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="row section">
+								<div class="col-sm-6">as</div>
+								<div class="col-sm-6">as</div>
+							</div>
+						</div>
+					</div>
 				</div>
 
 				<div
@@ -180,27 +302,32 @@
 					id="achievements-section"
 					onmouseover="toggleTrayActive('achievements')"
 				>
-					Achievements
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="row section">
+								<div class="col-sm-6">as</div>
+								<div class="col-sm-6">as</div>
+							</div>
+						</div>
+					</div>
 				</div>
-				<div
-					class="example back3"
-					id="projects-section"
-					onmouseover="toggleTrayActive('projects')"
-				>
-					Projects
-				</div>
+
 				<div
 					class="example back2"
 					id="contact-section"
 					onmouseover="toggleTrayActive('contact')"
 				>
-					Contact
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="row section">
+								<div class="col-sm-6">as</div>
+								<div class="col-sm-6">as</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
-
-		<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-		<button onclick="toggleTheme()">change theme</button>
 	</body>
 
 	<script>

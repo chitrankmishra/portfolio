@@ -60,3 +60,18 @@ html {
 .Sourcesans {
 	font-family: Sourcesans;
 }
+
+@font-face {
+	font-family: Montserrat;
+	src: url('fonts/Montserrat-Regular.ttf');
+}
+.Montserrat {
+	font-family: Montserrat;
+}
+@font-face {
+	font-family: Montserrat-Bold;
+	src: url('fonts/Montserrat-Bold.ttf');
+}
+.Montserrat-Bold {
+	font-family: Montserrat-Bold;
+}
