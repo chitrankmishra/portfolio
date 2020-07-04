@@ -1,77 +1,86 @@
 <html>
 	<head>
 		<style>
+			:root {
+				--background: #f5f7fa;
+				--font1: #0ac0b7;
+				--font2: #f5f7fa;
+				--font3: #212121;
+				--back1: #f5f7fa;
+				--back2: #0ac0b7;
+				--back3: #212121;
+				--back4: #1978a5;
+				--highlight1: #323a45;
+				--highlight2: #00ddd2;
+				--highlight3: #1978a5;
+				--shadow-white: #f5f7fa;
+				--shadow-black: #212121;
+			}
 			body {
-				overflow: hidden;
-				display: flex;
-				align-items: center;
-				justify-content: center;
 				background-color: #212121;
+				/* box-sizing: border-box; */
 			}
-
-			.noselect {
+			.center {
+				margin: 0 auto;
+				text-align: center;
+				justify-content: center;
 			}
-
 			button {
+				margin: 0px 0px 0px 0px;
+				padding: 0px 0px 0px 0px;
 				width: 160px;
-				height: 50px;
+				height: 40px;
 				cursor: pointer;
 				background: none;
-				border: 2px green solid;
+				line-height: 40px;
+				vertical-align: baseline;
+				border: none;
 			}
-
-			button:before,
-			button:after {
-				content: 'Hover!';
+			button:before {
+				content: 'REPO';
 				letter-spacing: 4px;
 				font-size: 16px;
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				transform: translateY(-50%);
+				transform: translateX(-50%) translateY(-50%);
 				position: absolute;
-				z-index: 1;
+				z-index: -1;
 				width: 160px;
-				height: 50px;
+				height: 40px;
 				transition: 500ms;
-			}
-
-			button:before {
 				overflow: hidden;
-				background: rgba(255, 255, 255, 0.5);
+				background: var(--back2);
 			}
-
-			button:after {
+			button::after {
+				content: 'REPO';
+				letter-spacing: 4px;
+				font-size: 16px;
+				position: absolute;
+				z-index: -1;
+				height: 40px;
+				transition: 500ms;
 				width: 0px;
 				overflow: hidden;
-				border-bottom: 2px solid rgba(255, 255, 255, 0.5);
-				border-top: 2px solid rgba(255, 255, 255, 0.5);
-				transform: translateY(-50%) translateX(80px);
-				color: rgba(255, 255, 255, 0.5);
+				border-bottom: 2px solid var(--back2);
+				border-top: 2px solid var(--back2);
+				transform: translateY(-50%);
+				color: var(--back2);
 			}
-
 			button:hover:before {
 				width: 0px;
-				transform: translateY(-50%) translateX(80px);
+				transform: translateY(-50%) translateX(-50%);
 			}
-
 			button:hover:after {
 				width: 160px;
-				transform: translateY(-50%) translateX(0px);
+				transform: translateY(-50%) translateX(-50%);
 			}
 
 			button:focus {
 				outline: none;
 			}
-			#repo:before,
-			#repo:after {
-				content: 'Repo';
-			}
 		</style>
 	</head>
 	<body>
-		<a href="https://www.google.co.in"
-			><button class="noselect" id="repo"></button
-		></a>
+		<div class="contain center">
+			<a href="https://www.google.co.in"><button class="noselect"></button></a>
+		</div>
 	</body>
 </html>

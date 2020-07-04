@@ -12,58 +12,55 @@ html {
 	-webkit-tap-highlight-color: transparent;
 }
 button {
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
 	width: 160px;
 	height: 40px;
 	cursor: pointer;
 	background: none;
+	line-height: 40px;
+	vertical-align: middle;
+	text-align: center;
 	border: none;
-}
-
-button:before,
-button:after {
-	content: 'Hover!';
 	letter-spacing: 4px;
 	font-size: 16px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	transform: translateY(-50%);
-	position: absolute;
 	z-index: 1;
+}
+button:before {
+	content: 'REPO';
+	transform: translateX(-50%) translateY(-50%);
+	position: absolute;
 	width: 160px;
 	height: 40px;
 	transition: 500ms;
-}
-
-button:before {
 	overflow: hidden;
 	background: var(--back2);
 	color: var(--shadow-white);
 }
-
-button:after {
-	width: 0px;
+button::after {
+	content: 'REPO';
+	position: absolute;
 	overflow: hidden;
+	height: 40px;
+	transition: 500ms;
+	width: 0px;
 	border-bottom: 2px solid var(--back2);
 	border-top: 2px solid var(--back2);
-	transform: translateY(-50%) translateX(80px);
+	transform: translateY(-50%);
 	color: var(--back2);
 }
-
 button:hover:before {
 	width: 0px;
-	transform: translateY(-50%) translateX(80px);
+	transform: translateY(-50%) translateX(-50%);
 }
-
 button:hover:after {
 	width: 160px;
-	transform: translateY(-50%) translateX(0px);
+	transform: translateY(-50%) translateX(-50%);
 }
 
 button:focus {
 	outline: none;
 }
-
 .red {
 	border: 2px red solid;
 }
