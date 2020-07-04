@@ -1,6 +1,8 @@
 html {
 	scroll-behavior: smooth;
 }
+body {
+}
 
 .noselect {
 	-webkit-touch-callout: none;
@@ -12,7 +14,7 @@ html {
 	-webkit-tap-highlight-color: transparent;
 }
 button {
-	width: 175px;
+	width: 160px;
 	height: 40px;
 	cursor: pointer;
 	background: none;
