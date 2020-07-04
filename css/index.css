@@ -394,6 +394,9 @@ body {
 		padding-top: 10px;
 		line-height: 50px;
 	}
+	#project-name {
+		font-size: 22px;
+	}
 
 	#project-description-box {
 		font-size: 14px;
