@@ -1,11 +1,77 @@
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="css/test.css" />
+		<style>
+			body {
+				overflow: hidden;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				background-color: #212121;
+			}
 
-		<link href="fontawesome/css/all.css" rel="stylesheet" />
-		<script defer src="fontawesome/js/all.js"></script>
+			.noselect {
+			}
+
+			button {
+				width: 160px;
+				height: 50px;
+				cursor: pointer;
+				background: none;
+				border: none;
+			}
+
+			button:before,
+			button:after {
+				content: 'Hover!';
+				letter-spacing: 4px;
+				font-size: 16px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				transform: translateY(-50%);
+				position: absolute;
+				z-index: 1;
+				width: 160px;
+				height: 50px;
+				transition: 500ms;
+			}
+
+			button:before {
+				overflow: hidden;
+				background: rgba(255, 255, 255, 0.5);
+			}
+
+			button:after {
+				width: 0px;
+				overflow: hidden;
+				border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+				border-top: 2px solid rgba(255, 255, 255, 0.5);
+				transform: translateY(-50%) translateX(80px);
+				color: rgba(255, 255, 255, 0.5);
+			}
+
+			button:hover:before {
+				width: 0px;
+				transform: translateY(-50%) translateX(80px);
+			}
+
+			button:hover:after {
+				width: 160px;
+				transform: translateY(-50%) translateX(0px);
+			}
+
+			button:focus {
+				outline: none;
+			}
+			#repo:before,
+			#repo:after {
+				content: 'Repo';
+			}
+		</style>
 	</head>
 	<body>
-		<i class="fas fa-user icon"></i>
+		<a href="https://www.google.co.in"
+			><button class="noselect" id="repo"></button
+		></a>
 	</body>
 </html>

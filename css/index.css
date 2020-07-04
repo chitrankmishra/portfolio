@@ -247,6 +247,11 @@ body {
 	font-size: 40px;
 }
 
+.sub-heading {
+	margin-top: 20px;
+	font-size: 30px;
+}
+
 .content-box {
 	border-bottom-right-radius: 10px;
 	border-top-left-radius: 10px;
@@ -285,6 +290,10 @@ body {
 	.heading {
 		margin-top: 60px;
 		font-size: 25px;
+	}
+	.sub-heading {
+		margin-top: 10px;
+		font-size: 20px;
 	}
 	.content-box {
 		margin: 20px 0px 20px 0px;
@@ -326,6 +335,12 @@ body {
 	transition: filter 0.5s, transform 0.5s;
 	filter: grayscale(100%);
 }
+#project-name-data,
+#description-data,
+#repo-link-data,
+#website-link-data {
+	display: none;
+}
 
 .project-logo:hover,
 :focus {
@@ -342,6 +357,41 @@ body {
 	.project-logo-div {
 		padding: 10px 20px 20px 20px;
 		line-height: auto;
+	}
+}
+
+#projects-description-section {
+	display: none;
+}
+
+#project-name {
+}
+
+.project-description-sub-div {
+	padding: 0px 20px 0px 20px;
+}
+
+#project-description-box {
+}
+
+.project-options {
+	padding-top: 20px;
+	line-height: auto;
+}
+
+#button-repo:before,
+#button-repo:after {
+	content: 'Repo';
+}
+#button-website:before,
+#button-website:after {
+	content: 'Website';
+}
+
+@media screen and (max-width: 700px) {
+	.project-options {
+		padding-top: 10px;
+		line-height: 50px;
 	}
 }
 

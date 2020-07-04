@@ -34,3 +34,18 @@ function toggleTrayActive(elementId) {
 	current[0].className = current[0].className.replace('tray-active', '');
 	next.className += ' tray-active';
 }
+
+function showDescription(elem) {
+	var name = elem.childNodes[3].innerHTML;
+	var description = elem.childNodes[5].innerHTML;
+	var repoLink = elem.childNodes[7].innerHTML;
+	var websiteLink = elem.childNodes[9].innerHTML;
+	console.log(name, description, repoLink, websiteLink);
+	// console.log(elem.childNodes[3].innerHTML);
+	document.getElementById('projects-description-section').style.display =
+		'block';
+	document.getElementById('project-name').innerHTML = name;
+	document.getElementById('project-description-box').innerHTML = description;
+	document.getElementById('repo-link').setAttribute('href', repoLink);
+	document.getElementById('website-link').setAttribute('href', websiteLink);
+}
