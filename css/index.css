@@ -372,6 +372,7 @@ body {
 }
 
 #project-description-box {
+	font-size: 18px;
 }
 
 .project-options {
@@ -392,6 +393,10 @@ body {
 	.project-options {
 		padding-top: 10px;
 		line-height: 50px;
+	}
+
+	#project-description-box {
+		font-size: 14px;
 	}
 }
 
