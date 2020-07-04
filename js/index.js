@@ -7,8 +7,6 @@ function initialize() {
 	} else {
 		setCookie('theme', 'light', 1);
 	}
-	document.getElementById('repo-link').focus();
-	document.getElementById('website-link').focus();
 }
 
 function test() {
