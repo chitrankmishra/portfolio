@@ -390,6 +390,10 @@ body {
 }
 
 @media screen and (max-width: 700px) {
+	#projects-description-section {
+		align-items: center;
+		justify-content: center;
+	}
 	.project-options {
 		padding-top: 10px;
 		line-height: 50px;
