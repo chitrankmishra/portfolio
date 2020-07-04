@@ -1,6 +1,38 @@
 @import 'template.css';
 :root {
 	--background: #202020;
+	--font1: #3778c2;
+	--font2: #212121;
+	--font3: #f5f7fa;
+	--back1: #212121;
+	--back2: #3778c2;
+	--back3: #f5f7fa;
+	--back4: #45233e;
+	--highlight1: #fafafa;
+	--highlight2: #949697;
+	--highlight3: #3c86f5;
+	--shadow-white: #f5f7fa;
+	--shadow-black: #000000;
+}
+/* Orange Theme */
+/* :root {
+	--background: #202020;
+	--font1: #fc6e22;
+	--font2: #212121;
+	--font3: #f5f7fa;
+	--back1: #212121;
+	--back2: #fc6e22;
+	--back3: #f5f7fa;
+	--back4: #ffff66;
+	--highlight1: #fafafa;
+	--highlight2: #fc9e22;
+	--highlight3: #06b2bb;
+	--shadow-white: #f5f7fa;
+	--shadow-black: #000000;
+} */
+/* Original Theme */
+/* :root {
+	--background: #202020;
 	--font1: #0ac0b7;
 	--font2: #212121;
 	--font3: #f5f7fa;
@@ -13,7 +45,7 @@
 	--highlight3: #2859b4;
 	--shadow-white: #f5f7fa;
 	--shadow-black: #000000;
-}
+} */
 body {
 	background-color: var(--background);
 }
