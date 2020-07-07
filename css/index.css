@@ -473,6 +473,10 @@ body {
 	transform: scale(1.1, 1.1);
 }
 
+#message-error {
+	display: none;
+}
+
 #message-response {
 	display: none;
 	color: var(--font2);

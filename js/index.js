@@ -9,6 +9,11 @@ function initialize() {
 	}
 }
 
+function validateEmail(email) {
+	const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+	return re.test(String(email).toLowerCase());
+}
+
 function test() {
 	window.alert('Chal Raha hai...');
 }
@@ -52,11 +57,25 @@ function showDescription(elem) {
 
 async function sendUserMessage() {
 	document.getElementById('message-response').style.display = 'none';
+	document.getElementById('message-error').style.display = 'none';
 	var username = document.getElementById('user-name').value;
 	var useremail = document.getElementById('user-email').value;
 	var usermessage = document.getElementById('user-message').value;
 
-	// messageFormatted = messageFormatted.split(' ').join('%20');
+	var error = document.getElementById('message-error');
+	if (username == '') {
+		error.style.display = 'block';
+		return;
+	}
+	if (usermessage == '') {
+		error.style.display = 'block';
+		return;
+	}
+	if (!validateEmail(useremail)) {
+		error.style.display = 'block';
+		return;
+	}
+
 	url = 'https://chitrank0614-all-in-one.herokuapp.com/portfolio/send-email/';
 	console.log('sending msg to ', url);
 	queryObj = {
