@@ -1520,6 +1520,57 @@
 												Noida
 											</div>
 										</div>
+										<div class="row">
+											<div class="col-sm-12">
+												<i class="fas fa-comments"></i>
+												&nbsp&nbsp Leave a message:
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-sm-12">
+												<div class="row">
+													<label class="col-sm-3" for="user-name">Name: </label>
+													<input
+														type="text"
+														class="form-control col-sm-9"
+														id="user-name"
+														placeholder="Write your name"
+													/>
+												</div>
+												<div class="row">
+													<label class="col-sm-3" for="user-email"
+														>Email:
+													</label>
+													<input
+														type="text"
+														class="form-control col-sm-9"
+														id="user-email"
+														placeholder="Enter your email for contacting."
+													/>
+												</div>
+												<div class="row">
+													<label class="col-sm-3" for="user-message"
+														>Message:
+													</label>
+													<textarea
+														type="text"
+														class="form-control col-sm-9"
+														id="user-message"
+														placeholder="Write your message."
+													></textarea>
+												</div>
+												<br />
+												<div class="row center">
+													<button
+														id="usermsg-button"
+														onclick="sendUserMessage()"
+													></button>
+												</div>
+												<div class="row center">
+													<div class="col-sm-12" id="message-response"></div>
+												</div>
+											</div>
+										</div>
 									</div>
 									<div class="col-sm-3">
 										<img class="avatar" src="images/avatar.png" />

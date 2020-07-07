@@ -473,6 +473,22 @@ body {
 	transform: scale(1.1, 1.1);
 }
 
+#message-response {
+	display: none;
+	color: var(--font2);
+}
+
+#usermsg-button:before {
+	content: 'Send';
+	background: var(--shadow-white);
+	color: var(--back2);
+}
+#usermsg-button:after {
+	content: 'Send';
+	color: var(--shadow-white);
+	border-color: var(--shadow-white);
+}
+
 @media screen and (max-width: 700px) {
 	.contact-info {
 		margin-top: 40px;

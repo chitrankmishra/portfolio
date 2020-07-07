@@ -49,3 +49,28 @@ function showDescription(elem) {
 	document.getElementById('repo-link').setAttribute('href', repoLink);
 	document.getElementById('website-link').setAttribute('href', websiteLink);
 }
+
+async function sendUserMessage() {
+	document.getElementById('message-response').style.display = 'none';
+	var username = document.getElementById('user-name').value;
+	var useremail = document.getElementById('user-email').value;
+	var usermessage = document.getElementById('user-message').value;
+
+	// messageFormatted = messageFormatted.split(' ').join('%20');
+	url = 'https://chitrank0614-all-in-one.herokuapp.com/portfolio/send-email/';
+	console.log('sending msg to ', url);
+	queryObj = {
+		Name: username,
+		Contact: useremail,
+		Message: usermessage,
+	};
+
+	query = await makeAsyncPostRequest(url, queryObj);
+	if (query['result'] == 'Done') {
+		document.getElementById('message-response').innerHTML = 'Message Sent';
+		document.getElementById('message-response').style.display = 'block';
+	} else {
+		document.getElementById('message-response').innerHTML = 'Server Error';
+		document.getElementById('message-response').style.display = 'block';
+	}
+}
