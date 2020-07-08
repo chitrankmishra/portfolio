@@ -332,7 +332,7 @@ body {
 	max-width: 100%;
 	height: auto;
 	border-radius: 5%;
-	transition: filter 0.5s, transform 0.5s;
+	transition: filter 0.5s, transform 0.5s, border-radius 1s;
 	filter: grayscale(100%);
 }
 #project-name-data,
@@ -345,6 +345,7 @@ body {
 .project-logo:hover,
 :focus {
 	filter: unset;
+	border-radius: 15%;
 	box-shadow: 0px 0px 10px 2px var(--back2);
 	transform: scale(1.1, 1.1);
 }
