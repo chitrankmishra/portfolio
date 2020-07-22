@@ -1,11 +1,11 @@
 function initialize() {
 	if (checkCookie('theme')) {
 		theme = getCookie('theme');
-		if (theme == 'dark') {
+		if (theme == 'light') {
 			toggleTheme();
 		}
 	} else {
-		setCookie('theme', 'light', 1);
+		setCookie('theme', 'dark', 1);
 	}
 }
 
