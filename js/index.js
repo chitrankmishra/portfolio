@@ -45,7 +45,7 @@ function showDescription(elem) {
 	var description = elem.childNodes[5].innerHTML;
 	var repoLink = elem.childNodes[7].innerHTML;
 	var websiteLink = elem.childNodes[9].innerHTML;
-	console.log(name, description, repoLink, websiteLink);
+	// console.log(name, description, repoLink, websiteLink);
 	// console.log(elem.childNodes[3].innerHTML);
 	document.getElementById('projects-description-section').style.display =
 		'block';
@@ -53,6 +53,11 @@ function showDescription(elem) {
 	document.getElementById('project-description-box').innerHTML = description;
 	document.getElementById('repo-link').setAttribute('href', repoLink);
 	document.getElementById('website-link').setAttribute('href', websiteLink);
+	var pos = document
+		.getElementById('projects-description-section')
+		.getBoundingClientRect();
+	window.scrollBy(pos.left, pos.top);
+	// console.log(pos.left, pos.top);
 }
 
 async function sendUserMessage() {
