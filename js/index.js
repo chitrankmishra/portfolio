@@ -81,8 +81,8 @@ async function sendUserMessage() {
 		return;
 	}
 
-	// url = 'https://chitrank0614-all-in-one.herokuapp.com/portfolio/send-email/';
-	url = 'http://127.0.0.1:5000/portfolio/send-email/';
+	url = 'https://chitrank0614-all-in-one.herokuapp.com/portfolio/send-email/';
+	// url = 'http://127.0.0.1:5000/portfolio/send-email/';
 	// console.log('sending msg to ', url);
 	queryObj = {
 		Name: username,
