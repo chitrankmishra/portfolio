@@ -12,6 +12,7 @@
 	--highlight1: #323a45;
 	--highlight2: #00ddd2;
 	--highlight3: #1978a5;
+	--highlight4: #00ddd2;
 	--shadow-white: #f5f7fa;
 	--shadow-black: #212121;
 }
@@ -37,6 +38,10 @@ body {
 }
 .highlight3 {
 	color: var(--highlight3);
+	font-weight: bolder;
+}
+.highlight4 {
+	color: var(--highlight4);
 	font-weight: bolder;
 }
 
