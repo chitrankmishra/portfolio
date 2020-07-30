@@ -445,10 +445,6 @@ body {
 }
 
 @media screen and (max-width: 700px) {
-	.tech-logo {
-		width: 25px;
-	}
-
 	.tech-logo-div {
 		padding: 0px 20px 0px 20px;
 		line-height: 50px;
