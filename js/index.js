@@ -82,18 +82,24 @@ async function sendUserMessage() {
 	}
 
 	url = 'https://chitrank0614-all-in-one.herokuapp.com/portfolio/send-email/';
-	console.log('sending msg to ', url);
+	// url = 'http://127.0.0.1:5000/portfolio/send-email/';
+	// console.log('sending msg to ', url);
 	queryObj = {
 		Name: username,
 		Contact: useremail,
 		Message: usermessage,
 	};
 
-	query = await makeAsyncPostRequest(url, queryObj);
-	if (query['result'] == 'Done') {
-		document.getElementById('message-response').innerHTML = 'Message Sent';
-		document.getElementById('message-response').style.display = 'block';
-	} else {
+	try {
+		query = await makeAsyncPostRequest(url, queryObj);
+		if (query['Status'] == 'Sent') {
+			document.getElementById('message-response').innerHTML = 'Message Sent';
+			document.getElementById('message-response').style.display = 'block';
+		} else {
+			document.getElementById('message-response').innerHTML = 'Server Error';
+			document.getElementById('message-response').style.display = 'block';
+		}
+	} catch {
 		document.getElementById('message-response').innerHTML = 'Server Error';
 		document.getElementById('message-response').style.display = 'block';
 	}
